@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		E5576BA429A7965600C0E6F1 /* MysticPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5576BA329A7965600C0E6F1 /* MysticPuzzleApp.swift */; };
-		E5576BA629A7965600C0E6F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5576BA529A7965600C0E6F1 /* ContentView.swift */; };
+		E5576BA629A7965600C0E6F1 /* MysticPuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5576BA529A7965600C0E6F1 /* MysticPuzzleView.swift */; };
 		E5576BA829A7965800C0E6F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5576BA729A7965800C0E6F1 /* Assets.xcassets */; };
 		E5576BAB29A7965800C0E6F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5576BAA29A7965800C0E6F1 /* Preview Assets.xcassets */; };
+		E5576BB329A798AA00C0E6F1 /* MysticPuzzleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5576BB229A798AA00C0E6F1 /* MysticPuzzleModel.swift */; };
+		E5576BB629A799F600C0E6F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5576BB529A799F600C0E6F1 /* Extensions.swift */; };
+		E5576BB929A79C5700C0E6F1 /* MysticPuzzleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5576BB829A79C5700C0E6F1 /* MysticPuzzleViewModel.swift */; };
+		E5576BBC29A7A85500C0E6F1 /* ChalkboardSE.ttc in Resources */ = {isa = PBXBuildFile; fileRef = E5576BBB29A7A85500C0E6F1 /* ChalkboardSE.ttc */; };
+		E5AE286D29ACE63000D485C6 /* mixkit-glass-plate-slide-1527.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5AE286C29ACE62F00D485C6 /* mixkit-glass-plate-slide-1527.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E5576BA029A7965600C0E6F1 /* MysticPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MysticPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5576BA329A7965600C0E6F1 /* MysticPuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysticPuzzleApp.swift; sourceTree = "<group>"; };
-		E5576BA529A7965600C0E6F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5576BA529A7965600C0E6F1 /* MysticPuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysticPuzzleView.swift; sourceTree = "<group>"; };
 		E5576BA729A7965800C0E6F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5576BAA29A7965800C0E6F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5576BB229A798AA00C0E6F1 /* MysticPuzzleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysticPuzzleModel.swift; sourceTree = "<group>"; };
+		E5576BB529A799F600C0E6F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E5576BB829A79C5700C0E6F1 /* MysticPuzzleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysticPuzzleViewModel.swift; sourceTree = "<group>"; };
+		E5576BBB29A7A85500C0E6F1 /* ChalkboardSE.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChalkboardSE.ttc; sourceTree = "<group>"; };
+		E5AE286C29ACE62F00D485C6 /* mixkit-glass-plate-slide-1527.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "mixkit-glass-plate-slide-1527.wav"; path = "MysticPuzzle/Assets.xcassets/mixkit-glass-plate-slide-1527.dataset/mixkit-glass-plate-slide-1527.wav"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,11 @@
 		E5576BA229A7965600C0E6F1 /* MysticPuzzle */ = {
 			isa = PBXGroup;
 			children = (
+				E5576BB729A79C4500C0E6F1 /* ViewModel */,
+				E5576BB429A799DC00C0E6F1 /* Extensions */,
+				E5576BB129A7989300C0E6F1 /* Model */,
 				E5576BA329A7965600C0E6F1 /* MysticPuzzleApp.swift */,
-				E5576BA529A7965600C0E6F1 /* ContentView.swift */,
+				E5576BA529A7965600C0E6F1 /* MysticPuzzleView.swift */,
 				E5576BA729A7965800C0E6F1 /* Assets.xcassets */,
 				E5576BA929A7965800C0E6F1 /* Preview Content */,
 			);
@@ -62,9 +75,35 @@
 		E5576BA929A7965800C0E6F1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				E5AE286C29ACE62F00D485C6 /* mixkit-glass-plate-slide-1527.wav */,
+				E5576BBB29A7A85500C0E6F1 /* ChalkboardSE.ttc */,
 				E5576BAA29A7965800C0E6F1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5576BB129A7989300C0E6F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5576BB229A798AA00C0E6F1 /* MysticPuzzleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5576BB429A799DC00C0E6F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5576BB529A799F600C0E6F1 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E5576BB729A79C4500C0E6F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5576BB829A79C5700C0E6F1 /* MysticPuzzleViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +165,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5576BAB29A7965800C0E6F1 /* Preview Assets.xcassets in Resources */,
+				E5AE286D29ACE63000D485C6 /* mixkit-glass-plate-slide-1527.wav in Resources */,
 				E5576BA829A7965800C0E6F1 /* Assets.xcassets in Resources */,
+				E5576BBC29A7A85500C0E6F1 /* ChalkboardSE.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5576BA629A7965600C0E6F1 /* ContentView.swift in Sources */,
+				E5576BA629A7965600C0E6F1 /* MysticPuzzleView.swift in Sources */,
+				E5576BB929A79C5700C0E6F1 /* MysticPuzzleViewModel.swift in Sources */,
 				E5576BA429A7965600C0E6F1 /* MysticPuzzleApp.swift in Sources */,
+				E5576BB329A798AA00C0E6F1 /* MysticPuzzleModel.swift in Sources */,
+				E5576BB629A799F600C0E6F1 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,21 +314,27 @@
 				DEVELOPMENT_TEAM = CD5BA2AYRN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mystic Puzzle";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thomaspham.MysticPuzzle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomaspham.mysticpuzzle.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,21 +349,27 @@
 				DEVELOPMENT_TEAM = CD5BA2AYRN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mystic Puzzle";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thomaspham.MysticPuzzle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomaspham.mysticpuzzle.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
